@@ -5,10 +5,9 @@ import MovieCard from './movieCard';
 import searchIcon from './searchIcon.svg';
 
 //TMDB API 
-const API_URL = 'http://api.themoviedb.org/3/movie/popular?api_key=e8bdff352d6337a321dd40e176a9926e';
-//const API_SEARCH="http://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query";
-//const API_KEY = '{process.env.REACT_APP_TMDB}';
-const API_KEY='e8bdff352d6337a321dd40e176a9926e'
+const API_URL = `http://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB}`;
+//const API_SEARCH = `http://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB}&query";
+//const API_KEY = `{process.env.REACT_APP_TMDB}`;
 
 //App Settings
 function App () {
@@ -32,7 +31,7 @@ function App () {
       e.preventDefault();
       console.log("Searching");
       try{
-        const url=`http://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`;
+        const url=`http://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB}&query=${query}`;
         const res = await fetch(url);
         const data = await res.json();
         console.log(data);
