@@ -1,3 +1,4 @@
 node_modules
 
+#Hides my api
 .env
