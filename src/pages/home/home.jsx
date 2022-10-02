@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import './home.css';
 import MovieCard from '../../components/moviecard/movieCard';
 import Navbar from "../../components/navbar/navbar";
+import Featured from "../../components/featured/featured";
+import List from "../../components/list/list";
 
 //TMDB API 
 const API_URL = `http://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB}`;
@@ -48,9 +50,14 @@ function  Home  ()  {
     return (
         <div className="home" >
           <Navbar />
+          <Featured/>
+          <List/>
+          <List/>
+          <List/>
+          <List/>
  
           
-         {/* <div className="search">
+          <div className="search">
             <input
               type="text"
               placeholder="Search"  
@@ -62,7 +69,7 @@ function  Home  ()  {
               alt="search"
               onClick={searchMovies}
             />
-          </div>*/}  
+          </div>  
           
           {/*If movie length is greater than 0, show movie card*/}
           {movies?.length > 0 ? (
