@@ -8,7 +8,8 @@ import { ArrowBackIosOutlined, ArrowForwardIosOutlined,} from '@mui/icons-materi
     const [slideNumber, setSlideNumber] = useState(0);
   
     const listRef = useRef();
-  
+
+    //Menu Carousel
     const handleClick = (direction) => {
       setIsMoved(true);
       let distance = listRef.current.getBoundingClientRect().x - 50;

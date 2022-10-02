@@ -1,8 +1,9 @@
 import { ArrowDropDown, Notifications, Search } from '@mui/icons-material';
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 
-const Navbar = () => {
+
+function Navbar () {
   const [isScrolled, setIsScrolled] = useState(false);
 
   window.onscroll = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
         <div className="left">
           {/*Logo or Title*/}
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            src=""
             alt=""
           />
           <span>Home</span>

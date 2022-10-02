@@ -57,7 +57,7 @@ function  Home  ()  {
           <List/>
  
           
-          <div className="search">
+          {/*<div className="search">
             <input
               type="text"
               placeholder="Search"  
@@ -69,7 +69,7 @@ function  Home  ()  {
               alt="search"
               onClick={searchMovies}
             />
-          </div>  
+          </div>*/} 
           
           {/*If movie length is greater than 0, show movie card*/}
           {movies?.length > 0 ? (

@@ -30,7 +30,6 @@
     right: 0;
 }
 .list .wrapper .container {
-    margin-left: 50px;
     display: flex;
     margin-top: 10px;
     width: max-content;
