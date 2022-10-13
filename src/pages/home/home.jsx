@@ -1,6 +1,6 @@
 //Pull data rom API as soon as app loads
 import React, { useState, useEffect } from 'react';
-import MovieCard from '../components/moviecard/movieCard';
+import MovieCard from '../../components/moviecard/movieCard';
 import "./home.css"
 
 //TMDB API 

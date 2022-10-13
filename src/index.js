@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './pages/home';
+import App from './pages/home/home';
 
 
 //Triggers div with id of 'root' and inject application inside
