@@ -1,6 +1,7 @@
 //Pull data rom API as soon as app loads
 import React, { useState, useEffect } from 'react';
 import MovieCard from '../../components/moviecard/movieCard';
+import TMDBlogo from '../../TMDBIcon.svg'
 import "./home.css"
 
 //TMDB API 
@@ -84,6 +85,10 @@ function  Home  ()  {
           {/*TMDb attribution*/}
           <span class="tmdb">
             This product uses the TMDB API but is not endorsed or certified by TMDB. 
+            <img
+              src={TMDBlogo}
+              alt="tmdb"
+            /> 
           </span>
         </div>
 
