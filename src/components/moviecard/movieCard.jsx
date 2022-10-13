@@ -7,8 +7,8 @@ const MovieCard = ({poster_path, overview, release_date, genre_ids, id, original
                     original_language, title, backdrop_path, popularity, vote_count, vote_average}) => {
     return (
       <div class="container">
-      <div className="moviecard">
-          <div>
+        <div className="moviecard">
+          <div class="rating">
             <p>{vote_average}</p>
           </div>
       
@@ -22,7 +22,7 @@ const MovieCard = ({poster_path, overview, release_date, genre_ids, id, original
             <span>{title}</span>
             <h3>{}</h3>
           </div>
-          </div>
+        </div>
       </div>
     );
 }
