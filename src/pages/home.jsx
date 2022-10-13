@@ -1,10 +1,7 @@
 //Pull data rom API as soon as app loads
 import React, { useState, useEffect } from 'react';
-import './home.css';
-import MovieCard from '../../components/moviecard/movieCard';
-import Navbar from "../../components/navbar/navbar";
-import Featured from "../../components/featured/featured";
-import List from "../../components/list/list";
+import MovieCard from '../components/moviecard/movieCard';
+import "./home.css"
 
 //TMDB API 
 const API_URL = `http://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB}`;
@@ -47,17 +44,13 @@ function  Home  ()  {
       setQuery(e.target.value);
     }
     
+    //Page Format
     return (
         <div className="home" >
-          <Navbar />
-          <Featured/>
-          <List/>
-          <List/>
-          <List/>
-          <List/>
- 
+          <h1>Posterville</h1>
           
-          {/*<div className="search">
+          {/*Search Bar*/}
+          <div className="search">
             <input
               type="text"
               placeholder="Search"  
@@ -69,7 +62,7 @@ function  Home  ()  {
               alt="search"
               onClick={searchMovies}
             />
-          </div>*/} 
+          </div> 
           
           {/*If movie length is greater than 0, show movie card*/}
           {movies?.length > 0 ? (
@@ -89,8 +82,11 @@ function  Home  ()  {
           }
           
           {/*TMDb attribution*/}
-          This product uses the TMDB API but is not endorsed or certified by TMDB. 
+          <span class="tmdb">
+            This product uses the TMDB API but is not endorsed or certified by TMDB. 
+          </span>
         </div>
+
     );
 }
 
