@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import MovieCard from '../../components/moviecard/movieCard';
 import TMDBlogo from '../../TMDBIcon.svg'
 import "./home.css"
+import SearchIcon from "../../searchIcon.svg"
 
 //TMDB API 
 const API_URL = `http://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB}`;
@@ -59,7 +60,7 @@ function  Home  ()  {
               onChange={changeHandler}
             />
             <img
-              
+              src={SearchIcon}
               alt="search"
               onClick={searchMovies}
             />
@@ -83,7 +84,7 @@ function  Home  ()  {
           }
           
           {/*TMDb attribution*/}
-          <span class="tmdb">
+          <span className="tmdb">
             This product uses the TMDB API but is not endorsed or certified by TMDB. 
             <img
               src={TMDBlogo}
