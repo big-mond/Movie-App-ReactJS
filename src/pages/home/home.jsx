@@ -49,7 +49,7 @@ function  Home  ()  {
     //Page Format
     return (
         <div className="home" >
-          <h1>Posterville</h1>
+          <h1>PosterTown</h1>
           
           {/*Search Bar*/}
           <div className="search">
