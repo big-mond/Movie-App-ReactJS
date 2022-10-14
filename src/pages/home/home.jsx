@@ -42,14 +42,14 @@ function  Home  ()  {
     }
 
     //Sets Search Target
-    const changeHandler=(e) => {
+    const changeHandler= (e) => {
       setQuery(e.target.value);
     }
     
     //Page Format
     return (
         <div className="home" >
-          <h1>PosterTown</h1>
+          <h1><a href="">PosterTown</a></h1>
           
           {/*Search Bar*/}
           <div className="search">
