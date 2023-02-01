@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Movie-App-ReactJS/static/css/main.711c5ed1.css",
+    "main.js": "/Movie-App-ReactJS/static/js/main.a3b26800.js",
+    "static/media/TMDBIcon.svg": "/Movie-App-ReactJS/static/media/TMDBIcon.4860836feb2171bd2f5d52d6151df740.svg",
+    "index.html": "/Movie-App-ReactJS/index.html",
+    "static/media/searchIcon.svg": "/Movie-App-ReactJS/static/media/searchIcon.cf315284d6e0edc1c7686864aa6da0bc.svg",
+    "main.711c5ed1.css.map": "/Movie-App-ReactJS/static/css/main.711c5ed1.css.map",
+    "main.a3b26800.js.map": "/Movie-App-ReactJS/static/js/main.a3b26800.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.711c5ed1.css",
+    "static/js/main.a3b26800.js"
+  ]
+}
