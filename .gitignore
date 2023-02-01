@@ -1,4 +1,6 @@
+#Folders to not include
 node_modules
+build
 
 #Hides my api
 .env
